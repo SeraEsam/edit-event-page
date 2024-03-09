@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script defer src="popup.js"></script>
+</head>
+<body>
+        <div class="area2" >
+            <ul class="circles2">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <div class="navbar">
+        <img src="../image/hub200.png" alt="">
+        <div class="navbar_items">
+            <button class="headerbtn" onclick="goToHome()"><p>HOME</p></button>
+            <button class="headerbtn" onclick="goToEvents()"><p>EVENTS</p></button>
+            <button class="headerbtn" onclick="goToScan()"><p>SCAN</p></button>
+            <button class="headerbtn" onclick="goToAbout()"><p>ABOUT</p></button>    
+        </div>
+        <div class="buts">
+            <button class="but1" onclick="goToSign()">Sign Up</button>
+            <button class="but2" onclick="goToLogin()">Log In</button>
+        </div>
+    </div>
+<div class="header2">
+    <h2>EVENTS</h2>
+    <div class="gallery">
+        <div class="gallery-container">
+            <div class="gallery-item gallery-item-1" data-index="1" id="g1">
+                        <img src="../image/hall1.jpg" alt="">
+                        <h1>Start Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis obcaecati id corrupti commodi animi quidem maiores eaque deserunt illum?</p>
+        <button data-modal-target="#modal">MORE</button>
+        <button onclick="scrollToSection()">REGISTER</button>
+            </div>
+            <div class="gallery-item gallery-item-2" data-index="2" id="g2">
+                        <img src="../image/hall5.jpg" alt="">
+                        <h1>Start Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis obcaecati id corrupti commodi animi quidem maiores eaque deserunt illum?</p>
+        <button data-modal-target="#modal">MORE</button>
+        <button onclick="scrollToSection()">REGISTER</button>
+            </div>
+            <div class="gallery-item gallery-item-3" data-index="3" id="g3">
+                        <img src="../image/hall2.jpg" alt="">
+                        <h1>Start Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis obcaecati id corrupti commodi animi quidem maiores eaque deserunt illum?</p>
+        <button data-modal-target="#modal">MORE</button>
+        <button onclick="scrollToSection()">REGISTER</button>
+            </div>
+            <div class="gallery-item gallery-item-4" data-index="4" id="g4">
+                        <img src="../image/hall3.jpg" alt="">
+                        <h1>Start Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis obcaecati id corrupti commodi animi quidem maiores eaque deserunt illum?</p>
+        <button data-modal-target="#modal">MORE</button>
+        <button onclick="scrollToSection()">REGISTER</button>
+            </div>
+            <div class="gallery-item gallery-item-5" data-index="5" id="g5">
+                        <img src="../image/hall4.jpg" alt="">
+                        <h1>Start Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perferendis obcaecati id corrupti commodi animi quidem maiores eaque deserunt illum?</p>
+        <button data-modal-target="#modal">MORE</button>
+        <button onclick="scrollToSection()">REGISTER</button>
+            </div>
+
+        </div>
+        <div class="gallery-controls"></div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title"><p>EVENT DESCRIPTON</p></div>
+              <div class="close">
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+            </div>
+            <button onclick="scrollToSection()" class="modal-btn" data-close-button class="close-button" >REGISTER</button>
+          </div>
+          <div id="overlay"></div>
+       </div>
+    </div>
+
+       <div class="registeration" id="registeration">
+        <div class="container5">
+            <header>Registration</header>
+    
+            <form action="#">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Event</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Event 1</option>
+                                    <option>Event 2</option>
+                                    <option>Event 3</option>
+                                    <option>Event 4</option>
+                                    <option>Event 5</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input type="number" placeholder="Enter mobile number" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+    
+                            
+                        </div>
+                    </div>
+    
+                    <div class="details ID">
+                        <span class="title1">Other Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="number" placeholder="Enter Your City" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>University</label>
+                                <input type="text" placeholder="Enter your university" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Study Section</label>
+                                <input type="text" placeholder="Enter study section" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>How Did You Know About This Event?</label>
+                                <select required>
+                                    <option disabled selected>Select</option>
+                                    <option>From Friend</option>
+                                    <option>From Social Media</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Did You Visit HUB200 Before?</label>
+                                <select required>
+                                    <option disabled selected>Select</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Ariving At The Required Time</label>
+                                <select required>
+                                    <option disabled selected>Select</option>
+                                    <option>I Can</option>
+                                    <option>I'll Try</option>
+                                    <option>I Can't</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                
+    
+                    <div class="details address">
+                        <span class="title">About</span>
+    
+                        <div class="fields">
+                            <div class="input-field1">
+                                <textarea rows="4" cols="50" placeholder="About Me" required></textarea>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                        <div class="buttonss">
+                            <button class="sumbit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="footer_items">
+            <div class="hub">
+                <img src="../image/hub200.png" alt="">
+                <p>Copyright 2023 by HUB200</p>
+            </div>
+            <div class="help">
+                Help?
+                <p>Lorem ipsum dolor</p>
+                <p>Excepteur sint occaecat cupidatat</p>
+                <p>consectetur adipiscing</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Excepteur sint occaecat cupidatat</p>
+            </div>
+            <div class="docs">
+                Related Docs.
+                <p>Excepteur sint occaecat cupidatat</p>
+                <p>Lorem ipsum dolor</p>
+                <p>consectetur adipiscing</p>
+            </div>
+            <div class="follow">
+                <p>        Follow Us       </p>
+                <div class="social">
+                    <ul>
+                        <li>
+                          <a class="facebook" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="twitter" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="instagram" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="google" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+       <script src="script.js"></script>
+       <script>
+        function goToHome() {
+            window.location.href = "land.html";
+        }
+
+        function goToEvents() {
+            window.location.href = "event.html";
+        }
+
+        function goToScan() {
+            window.location.href = "scan.html";
+        }
+
+        function goToSign() {
+            window.location.href = "sign.html";
+        }
+
+        function goToLogin() {
+            window.location.href = "login.html";
+        }
+
+        function goToAbout() {
+            window.location.href = "about.html";
+        }
+
+        function scrollToSection() {
+            var targetElement = document.getElementById("registeration");
+            targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
